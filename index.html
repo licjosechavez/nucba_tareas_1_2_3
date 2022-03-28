@@ -1,0 +1,90 @@
+<!-- Desafío:
+1. Tomar el archivo HTML del desafío anterior.
+2. El contenido del archivo colocarlo dentro de un DIV.
+3. Crear un form de contacto abajo de nuestra info.
+-->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase 02</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <main>
+            
+                <header>
+                    <nav class="navbar" id="top">
+                        <div class="logo">
+                            <a href="#top"><img src="img/logo.png" alt=""></a>
+                            
+                        </div>
+                        <div class="menu">
+                            <ul>
+                                <li> <a href="#top">Inicio</a></li>   
+                                <li> <a href="#form">Contacto</a></li>
+                            </ul>
+                        </div>   
+                    </nav>
+                </header>
+                <section class="foto-datos"> 
+                    <div>
+                        <img class="avatar" src="./img/foto4x4.jpg" alt="foto">
+                    </div>
+
+                    <div class="datos">
+                        <ul >
+                            <li>Lic. José Chavez</li>
+                            <li>lic.jose.a.chavez@gmail.com</li>
+                            <li>37 años</li>
+                        </ul>
+                    </div>
+
+                    <div class="presentacion">
+                        <p>Hola 👋, Mi nombre es José Chavez, soy Desarrollador Web FULLSTACK<br> en PHP/LARAVEL y aprendiendo el FULLSTACK 
+                            en JavaScript en NUCBA.
+                        </p>
+                    </div>
+                </section>
+
+                <section> 
+                    
+                </section>
+                
+                <section class="form"> 
+                    <article>
+                        <h2 id="form">Formulario de contacto</h2>
+                        <form action="#">
+                           
+                            <ul>
+                                <li>
+                                    <label for="name">Nombre y Apellido</label>
+                                    <input type="text" id="name" name="nombre" placeholder="Escribe aquí tu Nombre y Apellido">
+                                </li>
+                                <li>
+                                    <label for="mail">E-mail</label>
+                                    <input type="email" id="mail" name="email" placeholder="Email"> 
+                                </li>
+                                <li>
+                                    <label for="msg">Mensaje</label>
+                                    <textarea id="msg" name="user_message" placeholder="Escribe aquí tu mensaje" rows="15" cols="45"></textarea>
+                                </li>
+                                <li class="btn">
+                                    <button type="submit">Enviar</button>
+                                </li>
+                            </ul>
+                        </form>
+                    </article>
+                </section>     
+        </main>
+        <footer>
+            <p>Desarrollado por José Chavez - Desarrollador Frontend en <a href="https://nucba.com.ar/" target="_blank">NUCBA</a> 
+            </p>
+        </footer>
+    </div>
+</body>
+</html>
